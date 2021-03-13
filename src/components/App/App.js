@@ -1,10 +1,8 @@
-import Personagens from '../Personagens/Personagens'
+import Routes from '../../routes/routes'
 
 function App() {
   return (
-    <div>
-      <Personagens />
-    </div>
+    <Routes />
   );
 }
 
