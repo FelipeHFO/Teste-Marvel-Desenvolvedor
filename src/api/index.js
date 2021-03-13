@@ -13,6 +13,11 @@ app.get('/characters', (req, res) => {
   res.end(JSON.stringify(lista));
 })
 
+app.get('/characters/:characterId', (req, res) => {
+  const personagem = data.characters.find(char => char.id === parseInt(req.params.characterId));
+  res.send(personagem);
+})
+
 app.listen(PORT, () => {
   console.log('Servidor online!');
 })
