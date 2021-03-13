@@ -2,17 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { formatRoute } from 'react-router-named-routes';
 import { PERSONAGEM_PAGE_PATH } from '../../routes/routeNames';
-import { getPersonagens } from '../../services/personagens';
 
-function Personagens() {
-  const [personagens, setPersonagens] = useState([]);
-
-  useEffect(() => {
-    getPersonagens()
-    .then(resposta => setPersonagens(resposta.data))
-    .catch(erro => console.log(erro));
-  }, [])
-
+function Personagens({personagens}) {
   return (
     <div>
       {personagens.map(personagem => (
