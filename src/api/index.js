@@ -15,28 +15,27 @@ app.get('/characters', (req, res) => {
 
 app.get('/characters/:characterId', (req, res) => {
   const personagem = data.characters.find(char => char.id === parseInt(req.params.characterId));
-  res.send(personagem);
+  res.status(200).send(personagem);
 })
 
 app.get('/characters/:characterId/comics', (req, res) => {
   const { comics } = data.characters.find(char => char.id === parseInt(req.params.characterId));
-  res.send(comics);
+  res.status(200).send(comics);
 })
 
 app.get('/characters/:characterId/events', (req, res) => {
   const { events } = data.characters.find(char => char.id === parseInt(req.params.characterId));
-  res.send(events);
+  res.status(200).send(events);
 })
 
 app.get('/characters/:characterId/series', (req, res) => {
   const { series } = data.characters.find(char => char.id === parseInt(req.params.characterId));
-  const { available, items } = series;
-  res.send({ available, items });
+  res.status(200).send(series);
 })
 
 app.get('/characters/:characterId/stories', (req, res) => {
   const { stories } = data.characters.find(char => char.id === parseInt(req.params.characterId));
-  res.send(stories);
+  res.status(200).send(stories);
 })
 
 app.listen(PORT, () => {
