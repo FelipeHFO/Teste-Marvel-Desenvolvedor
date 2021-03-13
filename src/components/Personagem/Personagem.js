@@ -1,11 +1,8 @@
-import React from 'react';
-
-function Personagem({personagem}){
+function Personagem({name, description}) {
   return (
     <div>
-      <ul>
-        <li>{personagem.name}</li>
-      </ul>
+      <h1>{name}</h1>
+      <h3>{description}</h3>
     </div>
   )
 }
