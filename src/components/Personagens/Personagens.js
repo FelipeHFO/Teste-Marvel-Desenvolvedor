@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import Personagem from '../Personagem/Personagem';
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import { formatRoute } from 'react-router-named-routes';
+import { PERSONAGEM_PAGE_PATH } from '../../routes/routeNames';
 import api from '../../api/api';
 
 
@@ -15,7 +17,7 @@ function Personagens() {
   return (
     <div>
       {personagens.map(personagem => (
-        <Personagem key={personagem.id} personagem={personagem} />
+        <Link key={personagem.id} to={formatRoute(PERSONAGEM_PAGE_PATH, {id: personagem.id})}>{personagem.name}</Link>   
       ))} 
     </div>
   )
