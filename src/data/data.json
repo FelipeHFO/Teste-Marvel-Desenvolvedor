@@ -1,0 +1,169 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Hulk",
+      "description": "Forte e verde",
+      "comics": {
+        "available": 1,
+        "items": [
+          {
+            "0": {
+              "name": "Avengers"
+            }
+          }
+        ]
+      },
+      "events": {
+        "available": 1,
+        "items": [
+          {
+            "0": {
+              "name": "Secret Invasion"
+            }
+          }
+        ]
+      },
+      "series": {
+        "available": 3,
+        "items": [
+          {
+            "0": {
+              "name": "Série 1 - Hulk"
+            },
+            "1": {
+              "name": "Série 2 - Hulk"
+            },
+            "2": {
+              "name": "Série 3 - Hulk"
+            }
+          }
+        ]
+      },
+      "stories": {
+        "available": 3,
+        "items": [
+          {
+            "0": {
+              "name": "Stories 1 - Hulk"
+            },
+            "1": {
+              "name": "Stories 2 - Hulk"
+            },
+            "2": {
+              "name": "Stories 3 - Hulk"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Iron-Man",
+      "description": "Metido e rico",
+      "comics": {
+        "available": 1,
+        "items": [
+          {
+            "0": {
+              "name": "Iron-Man 1"
+            },
+            "1": {
+              "name": "Iron-Man 2"
+            }
+          }
+        ]
+      },
+      "events": {
+        "available": 1,
+        "items": [
+          {
+            "0": {
+              "name": "Civil War"
+            }
+          }
+        ]
+      },
+      "series": {
+        "available": 3,
+        "items": [
+          {
+            "0": {
+              "name": "Série 1 - Iron-Man"
+            },
+            "1": {
+              "name": "Série 2 - Iron-Man"
+            }
+          }
+        ]
+      },
+      "stories": {
+        "available": 3,
+        "items": [
+          {
+            "0": {
+              "name": "Stories 1 - Iron-Man"
+            },
+            "1": {
+              "name": "Stories 2 - Iron-Man"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Capitão America",
+      "description": "Usou anabolizantes",
+      "comics": {
+        "available": 1,
+        "items": [
+          {
+            "0": {
+              "name": "Capitão America 1"
+            },
+            "1": {
+              "name": "Capitão America 2"
+            }
+          }
+        ]
+      },
+      "events": {
+        "available": 1,
+        "items": [
+          {
+            "0": {
+              "name": "Civil War"
+            }
+          }
+        ]
+      },
+      "series": {
+        "available": 3,
+        "items": [
+          {
+            "0": {
+              "name": "Série 1 - Capitão America"
+            },
+            "1": {
+              "name": "Série 2 - Capitão America"
+            }
+          }
+        ]
+      },
+      "stories": {
+        "available": 3,
+        "items": [
+          {
+            "0": {
+              "name": "Stories 1 - Capitão America"
+            },
+            "1": {
+              "name": "Stories 2 - Capitão America"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
