@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Personagem from '../components/Personagem/Personagem'
-import api from '../api/api'
+import { getPersonagem } from '../services/personagens'
 
 function PersonagemPage(params){
   const [personagem, setPersonagem] = useState({});
 
   useEffect(() => {
-    api.get(`characters/${params.match.params.id}`)
+    getPersonagem(params.match.params.id)
     .then(resposta => setPersonagem(resposta.data))
     .catch(erro => console.log(erro));
   }, [])
