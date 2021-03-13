@@ -75,17 +75,20 @@ function Personagem({id, name, description}) {
 
   return (
     <div>
+      <br/>
       <Link to="/">Página Inicial</Link>
+      <br/>
+      <br/>
       <Link to={PERSONAGENS_PAGE_PATH}>Voltar</Link>
       <div>
         <h1>{name}</h1>
         <h3>{description}</h3>
-        <menu>
+        <nav>
           <button onClick={() => handle('comics') }>Comics</button>
           <button onClick={() => handle('events')}>Events</button>
           <button onClick={() => handle('series')}>Series</button>
           <button onClick={() => handle('stories')}>Stories</button>
-        </menu>
+        </nav>
       </div>
       <main>
         <ul>
@@ -95,6 +98,7 @@ function Personagem({id, name, description}) {
           <RenderStories />
         </ul>
       </main>
+      <br/>
     </div>
   )
 }

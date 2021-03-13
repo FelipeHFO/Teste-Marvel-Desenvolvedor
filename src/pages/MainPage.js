@@ -5,7 +5,10 @@ import DefaultLayout from '../layouts/DefaultLayout'
 function MainPage(){
   return (
     <DefaultLayout>
+      <br/>
       <Link to={PERSONAGENS_PAGE_PATH}>Personagens</Link>
+      <br/>
+      <br/>
     </DefaultLayout>
   )
 }
