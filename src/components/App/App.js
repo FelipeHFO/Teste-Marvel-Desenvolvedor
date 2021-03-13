@@ -1,7 +1,9 @@
+import Personagens from '../Personagens/Personagens'
+
 function App() {
   return (
     <div>
-      <h1>Personagens</h1>
+      <Personagens />
     </div>
   );
 }
