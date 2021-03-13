@@ -11,7 +11,7 @@ function PersonagemPage(params){
     .catch(erro => console.log(erro));
   }, [])
 
-  return <Personagem name={personagem.name} description={personagem.description} /> 
+  return <Personagem id={personagem.id} name={personagem.name} description={personagem.description} /> 
 }
 
 export default PersonagemPage;

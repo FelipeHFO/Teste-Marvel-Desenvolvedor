@@ -8,9 +8,7 @@
         "available": 1,
         "items": [
           {
-            "0": {
-              "name": "Avengers"
-            }
+            "name": "Avengers"
           }
         ]
       },
@@ -18,9 +16,7 @@
         "available": 1,
         "items": [
           {
-            "0": {
-              "name": "Secret Invasion"
-            }
+            "name": "Secret Invasion"
           }
         ]
       },
@@ -28,15 +24,13 @@
         "available": 3,
         "items": [
           {
-            "0": {
-              "name": "Série 1 - Hulk"
-            },
-            "1": {
-              "name": "Série 2 - Hulk"
-            },
-            "2": {
-              "name": "Série 3 - Hulk"
-            }
+            "name": "Série 1 - Hulk"
+          },
+          {
+            "name": "Série 2 - Hulk"
+          },
+          {
+            "name": "Série 3 - Hulk"
           }
         ]
       },
@@ -44,15 +38,13 @@
         "available": 3,
         "items": [
           {
-            "0": {
-              "name": "Stories 1 - Hulk"
-            },
-            "1": {
-              "name": "Stories 2 - Hulk"
-            },
-            "2": {
-              "name": "Stories 3 - Hulk"
-            }
+            "name": "Stories 1 - Hulk"
+          },
+          {
+            "name": "Stories 2 - Hulk"
+          },
+          {
+            "name": "Stories 3 - Hulk"
           }
         ]
       }
@@ -65,12 +57,10 @@
         "available": 1,
         "items": [
           {
-            "0": {
-              "name": "Iron-Man 1"
-            },
-            "1": {
-              "name": "Iron-Man 2"
-            }
+            "name": "Iron-Man 1"
+          },
+          {
+            "name": "Iron-Man 2"
           }
         ]
       },
@@ -78,9 +68,7 @@
         "available": 1,
         "items": [
           {
-            "0": {
-              "name": "Civil War"
-            }
+            "name": "Civil War"
           }
         ]
       },
@@ -88,12 +76,10 @@
         "available": 3,
         "items": [
           {
-            "0": {
-              "name": "Série 1 - Iron-Man"
-            },
-            "1": {
-              "name": "Série 2 - Iron-Man"
-            }
+            "name": "Série 1 - Iron-Man"
+          },
+          {
+            "name": "Série 2 - Iron-Man"
           }
         ]
       },
@@ -101,12 +87,10 @@
         "available": 3,
         "items": [
           {
-            "0": {
-              "name": "Stories 1 - Iron-Man"
-            },
-            "1": {
-              "name": "Stories 2 - Iron-Man"
-            }
+            "name": "Stories 1 - Iron-Man"
+          },
+          {
+            "name": "Stories 2 - Iron-Man"
           }
         ]
       }
@@ -119,12 +103,10 @@
         "available": 1,
         "items": [
           {
-            "0": {
-              "name": "Capitão America 1"
-            },
-            "1": {
-              "name": "Capitão America 2"
-            }
+            "name": "Capitão America 1"
+          },
+          {
+            "name": "Capitão America 2"
           }
         ]
       },
@@ -132,9 +114,7 @@
         "available": 1,
         "items": [
           {
-            "0": {
-              "name": "Civil War"
-            }
+            "name": "Civil War"
           }
         ]
       },
@@ -142,12 +122,10 @@
         "available": 3,
         "items": [
           {
-            "0": {
-              "name": "Série 1 - Capitão America"
-            },
-            "1": {
-              "name": "Série 2 - Capitão America"
-            }
+            "name": "Série 1 - Capitão America"
+          },
+          {
+            "name": "Série 2 - Capitão America"
           }
         ]
       },
@@ -155,12 +133,10 @@
         "available": 3,
         "items": [
           {
-            "0": {
-              "name": "Stories 1 - Capitão America"
-            },
-            "1": {
-              "name": "Stories 2 - Capitão America"
-            }
+            "name": "Stories 1 - Capitão America"
+          },
+          {
+            "name": "Stories 2 - Capitão America"
           }
         ]
       }
