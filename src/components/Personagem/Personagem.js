@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { getPersonagemDetails } from '../../services/personagens';
+import { PERSONAGENS_PAGE_PATH } from '../../routes/routeNames';
 
 function Personagem({id, name, description}) {
   const [visible, setVisible] = useState({
@@ -73,14 +75,18 @@ function Personagem({id, name, description}) {
 
   return (
     <div>
-      <h1>{name}</h1>
-      <h3>{description}</h3>
-      <menu>
-        <button onClick={() => handle('comics') }>Comics</button>
-        <button onClick={() => handle('events')}>Events</button>
-        <button onClick={() => handle('series')}>Series</button>
-        <button onClick={() => handle('stories')}>Stories</button>
-      </menu>
+      <Link to="/">Página Inicial</Link>
+      <Link to={PERSONAGENS_PAGE_PATH}>Voltar</Link>
+      <div>
+        <h1>{name}</h1>
+        <h3>{description}</h3>
+        <menu>
+          <button onClick={() => handle('comics') }>Comics</button>
+          <button onClick={() => handle('events')}>Events</button>
+          <button onClick={() => handle('series')}>Series</button>
+          <button onClick={() => handle('stories')}>Stories</button>
+        </menu>
+      </div>
       <main>
         <ul>
           <RenderComics />
