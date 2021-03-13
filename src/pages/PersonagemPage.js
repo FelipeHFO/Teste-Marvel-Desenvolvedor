@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Personagem from '../components/Personagem/Personagem'
 import { getPersonagem } from '../services/personagens'
+import DefaultLayout from '../layouts/DefaultLayout'
 
 function PersonagemPage(params){
   const [personagem, setPersonagem] = useState({});
@@ -11,7 +12,11 @@ function PersonagemPage(params){
     .catch(erro => console.log(erro));
   }, [])
 
-  return <Personagem id={personagem.id} name={personagem.name} description={personagem.description} /> 
+  return (
+    <DefaultLayout>
+      <Personagem id={personagem.id} name={personagem.name} description={personagem.description} />
+    </DefaultLayout>
+ )
 }
 
 export default PersonagemPage;

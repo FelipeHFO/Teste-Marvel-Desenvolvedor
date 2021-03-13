@@ -4,9 +4,9 @@ import {
   Switch
 } from 'react-router-dom';
 
-import MainPageComponent from '../pages/MainPage';
-import PersonagemComponent from '../pages/PersonagemPage';
-import PersonagensComponent from '../components/Personagens/Personagens';
+import MainPage from '../pages/MainPage';
+import PersonagemPage from '../pages/PersonagemPage';
+import PersonagensPage from '../pages/PersonagensPage';
 
 import { 
   PERSONAGENS_PAGE_PATH,
@@ -16,9 +16,9 @@ import {
 const Routes = () => (
   <Router>
     <Switch>
-      <Route exact path="/" component={MainPageComponent}/>
-      <Route exact path={PERSONAGENS_PAGE_PATH} component={PersonagensComponent}/>
-      <Route exact path={PERSONAGEM_PAGE_PATH} component={PersonagemComponent}/>
+      <Route exact path="/" component={MainPage}/>
+      <Route exact path={PERSONAGENS_PAGE_PATH} component={PersonagensPage}/>
+      <Route exact path={PERSONAGEM_PAGE_PATH} component={PersonagemPage}/>
     </Switch>
   </Router>
 )
