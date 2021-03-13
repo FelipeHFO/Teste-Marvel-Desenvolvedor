@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import api from '../../api/api';
+import { getPersonagemDetails } from '../../services/personagens';
 
 function Personagem({id, name, description}) {
   const [visible, setVisible] = useState({
@@ -15,7 +15,7 @@ function Personagem({id, name, description}) {
   const [stories, setStories] = useState('');
   
   async function handle(params) {
-    const { data } = await api.get(`characters/${id}/${params}`);
+    const { data } = await getPersonagemDetails(id, params);
     
     if(params === 'comics'){
       setComics(data);
