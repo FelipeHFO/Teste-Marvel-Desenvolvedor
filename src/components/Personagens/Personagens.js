@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { formatRoute } from 'react-router-named-routes';
 import { PERSONAGEM_PAGE_PATH } from '../../routes/routeNames';
 
-
 function Personagens({personagens}) {
   return (
     <div>
