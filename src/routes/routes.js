@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import MainPage from '../pages/MainPage';
+import NotFoundPage from '../pages/NotFoundPage';
 import PersonagemPage from '../pages/PersonagemPage';
 import PersonagensPage from '../pages/PersonagensPage';
 
@@ -20,6 +21,7 @@ const Routes = () => (
       <Route exact path="/" component={MainPage}/>
       <Route exact path={PERSONAGENS_PAGE_PATH} component={PersonagensPage}/>
       <Route exact path={PERSONAGEM_PAGE_PATH} component={PersonagemPage}/>
+      <Route component={NotFoundPage} />
     </Switch>
   </Router>
 )
