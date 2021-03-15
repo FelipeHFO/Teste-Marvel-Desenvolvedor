@@ -24,6 +24,15 @@
   PERSONAGENS PAGE and PERSONAGENS COMPONENT Styles
 */
 
+.breadcrumbsPersonagens{
+  font-size: 2rem;
+  position: fixed;
+  top: 165px;
+  left: 165px;
+  margin: 20px;
+  padding: 5px 10px;
+}
+
 .btnHomePage{
   position: fixed;
   top: 165px;
@@ -76,10 +85,37 @@
   PERSONAGEM PAGE and PERSONAGEM COMPONENT Styles
 */
 
+.breadcrumbsOne{
+  font-size: 2rem;
+  position: fixed;
+  top: 165px;
+  left: 130px;
+  margin: 20px;
+  padding: 5px 10px;
+}
+
+.breadcrumbsTwo{
+  font-size: 2rem;
+  position: fixed;
+  top: 165px;
+  left: 295px;
+  margin: 20px;
+  padding: 5px 10px;
+}
+
+.breadcrumbsHero{
+  font-size: 2rem;
+  position: fixed;
+  top: 165px;
+  left: 330px;
+  margin: 20px;
+  padding: 5px 10px;
+}
+
 .btnVoltar{
   position: fixed;
-  top: 215px;
-  left: 0px;
+  top: 165px;
+  left: 170px;
   margin: 20px;
   padding: 5px 10px;
   border: 3px solid black;

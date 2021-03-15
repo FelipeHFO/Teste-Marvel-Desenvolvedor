@@ -17,6 +17,8 @@ function PersonagensPage(params){
   return (
     <DefaultLayout>
       <Link to="/" className={StylesPages.btnHomePage}>Página Inicial</Link>
+      <h1 className={StylesPages.breadcrumbsOne}>&gt;&gt;</h1>
+      <h1 className={StylesPages.breadcrumbsPersonagens}>Personagens</h1>
       <Personagens personagens={personagens}/>
     </DefaultLayout>
  )
