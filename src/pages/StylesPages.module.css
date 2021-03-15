@@ -1,0 +1,152 @@
+/*
+  MAIN PAGE Styles
+*/
+
+.btnPersonagens{
+  color: black;
+  font-size: 4rem;
+  text-decoration: none;
+  background-color: white;
+  border: 5px solid black;
+  padding: 10px 20px;
+
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.btnPersonagens:hover{
+  color: white;
+  background-color: black;
+}
+
+/*
+  PERSONAGENS PAGE and PERSONAGENS COMPONENT Styles
+*/
+
+.btnHomePage{
+  position: fixed;
+  top: 165px;
+  left: 0px;
+  margin: 20px;
+  padding: 5px 10px;
+  border: 3px solid black;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.btnHomePage:hover{
+  color: white;
+  background-color: black;
+}
+
+.containerHeroes{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.btnHeroes{
+  text-align: center;
+  text-decoration: none;
+  font-size: 3rem;
+  color: white;
+  background-color: red;
+  border: 5px solid red;
+  padding: 20px;
+
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.btnHeroes:hover{
+  color: red;
+  background-color: white;
+  border: 5px solid red;
+}
+
+/*
+  PERSONAGEM PAGE and PERSONAGEM COMPONENT Styles
+*/
+
+.btnVoltar{
+  position: fixed;
+  top: 215px;
+  left: 0px;
+  margin: 20px;
+  padding: 5px 10px;
+  border: 3px solid black;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.btnVoltar:hover{
+  color: white;
+  background-color: black;
+}
+
+.containerHero{
+  width: 40vw;
+  height: 50vh;
+  border: 3px solid black;
+  background-color: rgba(255, 255, 255, 0.445);
+  text-align: center;
+}
+
+.nameHero{
+  font-size: 3.5rem;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.descriptionHero{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.containerBtns{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 30px auto;
+  padding: 0 50px;
+}
+
+.heroesBtns{
+  font-size: 1.5rem;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px 20px;
+  outline: none;
+
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.heroesBtns:hover{
+  color: white;
+  background-color: black;
+}
+
+.detailsList{
+  list-style: none;
+}
+
+.detailsList li{
+  font-size: 1.5rem;
+}

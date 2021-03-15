@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { getPersonagemDetails } from '../../services/personagens';
-import { PERSONAGENS_PAGE_PATH } from '../../routes/routeNames';
+import StylesPages from '../../pages/StylesPages.module.css';
 
 function Personagem({id, name, description}) {
   const [visible, setVisible] = useState({
@@ -74,31 +73,25 @@ function Personagem({id, name, description}) {
   }
 
   return (
-    <div>
-      <br/>
-      <Link to="/">Página Inicial</Link>
-      <br/>
-      <br/>
-      <Link to={PERSONAGENS_PAGE_PATH}>Voltar</Link>
+    <div className={StylesPages.containerHero}>
       <div>
-        <h1>{name}</h1>
-        <h3>{description}</h3>
-        <nav>
-          <button onClick={() => handle('comics') }>Comics</button>
-          <button onClick={() => handle('events')}>Events</button>
-          <button onClick={() => handle('series')}>Series</button>
-          <button onClick={() => handle('stories')}>Stories</button>
-        </nav>
+        <h1 className={StylesPages.nameHero}>{name}</h1>
+        <h3 className={StylesPages.descriptionHero}>{description}</h3>
       </div>
+      <nav className={StylesPages.containerBtns}>
+        <button onClick={() => handle('comics') } className={StylesPages.heroesBtns}>Comics</button>
+        <button onClick={() => handle('events')} className={StylesPages.heroesBtns}>Events</button>
+        <button onClick={() => handle('series')} className={StylesPages.heroesBtns}>Series</button>
+        <button onClick={() => handle('stories')} className={StylesPages.heroesBtns}>Stories</button>
+      </nav>
       <main>
-        <ul>
+        <ul className={StylesPages.detailsList}>
           <RenderComics />
           <RenderEvents />
           <RenderSeries />
           <RenderStories />
         </ul>
       </main>
-      <br/>
     </div>
   )
 }
