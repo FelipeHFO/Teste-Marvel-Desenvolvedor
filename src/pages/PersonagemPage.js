@@ -12,17 +12,21 @@ function PersonagemPage(params){
   useEffect(() => {
     getPersonagem(params.match.params.id)
     .then(resposta => setPersonagem(resposta.data))
-    .catch(erro => console.log(erro));
+    .catch(erro => console.error(erro));
   }, [])
 
   return (
     <DefaultLayout>
+      {personagem.id !== undefined ?
+      <>
       <Link to="/" className={StylesPages.btnHomePage}>Página Inicial</Link>
       <h1 className={StylesPages.breadcrumbsOne}>&gt;&gt;</h1>
       <Link to={PERSONAGENS_PAGE_PATH} className={StylesPages.btnVoltar}>Personagens</Link>
       <h1 className={StylesPages.breadcrumbsTwo}>&gt;&gt;</h1>
       <h1 className={StylesPages.breadcrumbsHero}>{personagem.name}</h1>
       <Personagem id={personagem.id} name={personagem.name} description={personagem.description} />
+      </>
+      : <h1 className={StylesPages.erro}>404 - Page not found...</h1>}    
     </DefaultLayout>
  )
 }

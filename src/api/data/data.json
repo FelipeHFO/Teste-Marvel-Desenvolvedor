@@ -51,35 +51,28 @@
     },
     {
       "id": 2,
-      "name": "Iron-Man",
+      "name": "Homem de Ferro",
       "description": "Metido e rico",
       "comics": {
         "available": 1,
         "items": [
           {
-            "name": "Iron-Man 1"
+            "name": "Homem de Ferro 1"
           },
           {
-            "name": "Iron-Man 2"
+            "name": "Homem de Ferro 2"
           }
         ]
       },
-      "events": {
-        "available": 1,
-        "items": [
-          {
-            "name": "Civil War"
-          }
-        ]
-      },
+      "events": "",
       "series": {
         "available": 3,
         "items": [
           {
-            "name": "Série 1 - Iron-Man"
+            "name": "Série 1 - Homem de Ferro"
           },
           {
-            "name": "Série 2 - Iron-Man"
+            "name": "Série 2 - Homem de Ferro"
           }
         ]
       },
@@ -87,10 +80,10 @@
         "available": 3,
         "items": [
           {
-            "name": "Stories 1 - Iron-Man"
+            "name": "Stories 1 - Homem de Ferro"
           },
           {
-            "name": "Stories 2 - Iron-Man"
+            "name": "Stories 2 - Homem de Ferro"
           }
         ]
       }
