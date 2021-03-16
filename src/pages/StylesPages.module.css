@@ -12,6 +12,7 @@
   background-color: third;
   border: 5px solid secondary;
   padding: 10px 20px;
+  margin-bottom: 50px;
 
   transition-property: all;
   transition-duration: 0.5s;

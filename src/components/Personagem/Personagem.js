@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { getPersonagemDetails } from '../../services/personagens';
 import StylesPages from '../../pages/StylesPages.module.css';
 
@@ -15,6 +15,12 @@ function Personagem({id, name, description}) {
   const [events, setEvents] = useState('');
   const [series, setSeries] = useState('');
   const [stories, setStories] = useState('');
+
+  useEffect( () => {
+    getPersonagemDetails(id, 'comics')
+    .then(({data}) => setComics(data));
+    setVisible({comics: true, events: false, series: false, stories: false});
+  }, [])
   
   async function handle(params) {
     const { data } = await getPersonagemDetails(id, params);

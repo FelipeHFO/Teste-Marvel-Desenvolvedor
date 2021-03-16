@@ -1,7 +1,7 @@
 @value colors: "../styles/base/_colors.css";
 @value primary, secondary, third from colors;
 
-.title{
+.header{
   width: 100vw;
   background-color: primary;
   color: third;
