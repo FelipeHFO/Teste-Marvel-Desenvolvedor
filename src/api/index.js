@@ -15,26 +15,47 @@ app.get('/characters', (req, res) => {
 
 app.get('/characters/:characterId', (req, res) => {
   const personagem = data.characters.find(char => char.id === parseInt(req.params.characterId));
+
+  if(!personagem)
+    return res.status(200).send({ msg: 'Personagem não encontrado...' });
+
   res.status(200).send(personagem);
 })
 
 app.get('/characters/:characterId/comics', (req, res) => {
   const { comics } = data.characters.find(char => char.id === parseInt(req.params.characterId));
+
+  if(!comics)
+    return res.status(200).send({ errors: { msg: 'Personagem não tem comics...' }});
+
   res.status(200).send(comics);
 })
 
 app.get('/characters/:characterId/events', (req, res) => {
   const { events } = data.characters.find(char => char.id === parseInt(req.params.characterId));
+
+  if(!events){
+    return res.status(200).send({ errors: { msg: 'Personagem não tem events...' }});
+  }
+
   res.status(200).send(events);
 })
 
 app.get('/characters/:characterId/series', (req, res) => {
   const { series } = data.characters.find(char => char.id === parseInt(req.params.characterId));
+
+  if(!series)
+    return res.status(200).send({ errors: { msg:'Personagem não tem series...' }});
+
   res.status(200).send(series);
 })
 
 app.get('/characters/:characterId/stories', (req, res) => {
   const { stories } = data.characters.find(char => char.id === parseInt(req.params.characterId));
+
+  if(!stories)
+    return res.status(200).send({ errors: { msg:'Personagem não tem stories...' }});
+
   res.status(200).send(stories);
 })
 
