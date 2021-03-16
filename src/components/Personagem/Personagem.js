@@ -25,7 +25,6 @@ function Personagem({id, name, description}) {
     }
     if(params === 'events'){
       setEvents(data);
-      console.log(data);
       setVisible({comics: false, events: true, series: false, stories: false});
     }
     if(params === 'series'){
@@ -93,10 +92,10 @@ function Personagem({id, name, description}) {
         <h3 className={StylesPages.descriptionHero}>{description}</h3>
       </div>
       <nav className={StylesPages.containerBtns}>
-        <button onClick={() => handle('comics') } className={StylesPages.heroesBtns}>Comics</button>
-        <button onClick={() => handle('events')} className={StylesPages.heroesBtns}>Events</button>
-        <button onClick={() => handle('series')} className={StylesPages.heroesBtns}>Series</button>
-        <button onClick={() => handle('stories')} className={StylesPages.heroesBtns}>Stories</button>
+        <button onClick={() => handle('comics') } className={StylesPages.heroesBtns}>Quadrinhos</button>
+        <button onClick={() => handle('events')} className={StylesPages.heroesBtns}>Eventos</button>
+        <button onClick={() => handle('series')} className={StylesPages.heroesBtns}>Séries</button>
+        <button onClick={() => handle('stories')} className={StylesPages.heroesBtns}>Histórias</button>
       </nav>
       <main>
         <ul className={StylesPages.detailsList}>

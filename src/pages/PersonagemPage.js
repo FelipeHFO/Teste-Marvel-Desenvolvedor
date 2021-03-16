@@ -21,7 +21,7 @@ function PersonagemPage(params){
       <>
       <Link to="/" className={StylesPages.btnHomePage}>Página Inicial</Link>
       <h1 className={StylesPages.breadcrumbsOne}>&gt;&gt;</h1>
-      <Link to={PERSONAGENS_PAGE_PATH} className={StylesPages.btnVoltar}>Personagens</Link>
+      <Link to={PERSONAGENS_PAGE_PATH[0]} className={StylesPages.btnVoltar}>Personagens</Link>
       <h1 className={StylesPages.breadcrumbsTwo}>&gt;&gt;</h1>
       <h1 className={StylesPages.breadcrumbsHero}>{personagem.name}</h1>
       <Personagem id={personagem.id} name={personagem.name} description={personagem.description} />

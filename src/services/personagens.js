@@ -1,13 +1,13 @@
-import api from './api';
+import apiV1 from './api';
 
 export const getPersonagem = (id) => {
-  return api.get(`/characters/${id}`);
+  return apiV1.get(`/characters/${id}`);
 }
 
 export const getPersonagens = () => {
-  return api.get(`/characters`);
+  return apiV1.get(`/characters`);
 }
 
 export const getPersonagemDetails = (id, params) => {
-  return api.get(`/characters/${id}/${params}`);
+  return apiV1.get(`/characters/${id}/${params}`);
 }
