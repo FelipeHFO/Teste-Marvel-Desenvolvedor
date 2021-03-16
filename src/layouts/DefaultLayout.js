@@ -4,7 +4,7 @@ import DefaultLayoutStyle from './DefaultLayoutStyle.module.css';
 function DefaultLayout(props) {
   return (
     <div>
-      <header className={DefaultLayoutStyle.title}>
+      <header className={DefaultLayoutStyle.header}>
         MARVEL
       </header>
       <main className={DefaultLayoutStyle.main}>
