@@ -6,7 +6,7 @@ import StylesPages from './StylesPages.module.css';
 function MainPage(){
   return (
     <DefaultLayout>
-      <Link to={PERSONAGENS_PAGE_PATH} className={StylesPages.btnPersonagens}>Personagens</Link>
+      <Link to={PERSONAGENS_PAGE_PATH[0]} className={StylesPages.btnPersonagens}>Personagens</Link>
     </DefaultLayout>
   )
 }

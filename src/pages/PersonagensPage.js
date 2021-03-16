@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Personagens from '../components/Personagens/Personagens';
 import DefaultLayout from '../layouts/DefaultLayout';
 import { getPersonagens } from '../services/personagens';
-import StylesPages from './StylesPages.module.css';
+import { Link } from 'react-router-dom';
+import StylesPages from '../pages/StylesPages.module.css';
 
 function PersonagensPage(params){
   const [personagens, setPersonagens] = useState([]);

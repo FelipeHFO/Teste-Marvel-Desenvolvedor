@@ -10,7 +10,7 @@ function Personagens({personagens}) {
       {personagens.map(personagem => (
         <Link 
           key={personagem.id} 
-          to={formatRoute(PERSONAGEM_PAGE_PATH, {id: personagem.id})}
+          to={formatRoute(PERSONAGEM_PAGE_PATH[0], {id: personagem.id})}
           className={StylesPages.btnHeroes}
         >
           {personagem.name}
