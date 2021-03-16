@@ -1,7 +1,10 @@
+@value colors: "../styles/base/_colors.css";
+@value primary, secondary, third from colors;
+
 .title{
   width: 100vw;
-  background-color: red;
-  color: white;
+  background-color: primary;
+  color: third;
   text-align: center;
   font-size: 8rem;
 }
@@ -21,8 +24,8 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
+  background-color: primary;
+  color: third;
   text-align: center;
   font-size: 1.7rem;
 }
