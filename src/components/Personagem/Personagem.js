@@ -98,10 +98,10 @@ function Personagem({id, name, description}) {
         <h3 className={StylesPages.descriptionHero}>{description}</h3>
       </div>
       <nav className={StylesPages.containerBtns}>
-        <button onClick={() => handle('comics') } className={StylesPages.heroesBtns}>Quadrinhos</button>
-        <button onClick={() => handle('events')} className={StylesPages.heroesBtns}>Eventos</button>
-        <button onClick={() => handle('series')} className={StylesPages.heroesBtns}>Séries</button>
-        <button onClick={() => handle('stories')} className={StylesPages.heroesBtns}>Histórias</button>
+        <button onClick={() => handle('comics') } className={visible.comics === true ? `${StylesPages.heroesBtns} ${StylesPages.isSelected}` : `${StylesPages.heroesBtns}`}>Quadrinhos</button>
+        <button onClick={() => handle('events')} className={visible.events === true ? `${StylesPages.heroesBtns} ${StylesPages.isSelected}` : `${StylesPages.heroesBtns}`}>Eventos</button>
+        <button onClick={() => handle('series')} className={visible.series === true ? `${StylesPages.heroesBtns} ${StylesPages.isSelected}` : `${StylesPages.heroesBtns}`}>Séries</button>
+        <button onClick={() => handle('stories')} className={visible.stories === true ? `${StylesPages.heroesBtns} ${StylesPages.isSelected}` : `${StylesPages.heroesBtns}`}>Histórias</button>
       </nav>
       <main>
         <ul className={StylesPages.detailsList}>
