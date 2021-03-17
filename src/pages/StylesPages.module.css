@@ -154,7 +154,7 @@
 
 .descriptionHero{
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .containerBtns{
@@ -183,7 +183,16 @@
   background-color: secondary;
 }
 
+.isSelected{
+  color: white;
+  background-color: black;
+}
+
 .detailsList{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
 }
 
@@ -197,4 +206,141 @@
 
 .erro{
   font-size: 6rem;
+}
+
+
+@media (max-width: 700px){
+
+  .btnPersonagens{
+    font-size: 2rem;
+    border: 3px solid secondary;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+  }
+  
+  .btnHomePage{
+    position: fixed;
+    top: 90px;
+    left: -15px;
+    border: 2px solid secondary;
+    padding: 2px 4px;
+    font-size: 1rem;
+  }
+
+  .breadcrumbsPersonagens{
+    font-size: 1rem;
+    position: fixed;
+    top: 90px;
+    left: 88px;
+  }
+  
+  
+  .containerHeroes{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 45vh;
+    align-content: space-around;
+  }
+  
+  .btnHeroes{
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1px;
+    margin: 0 auto;
+  }
+  
+  /*
+    PERSONAGEM PAGE and PERSONAGEM COMPONENT Styles
+  */
+  
+  .breadcrumbsOne{
+    font-size: 1rem;
+    position: fixed;
+    top: 90px;
+    left: 65px;
+    margin: 20px;
+    padding: 5px 10px;
+  }
+  
+  .breadcrumbsTwo{
+    font-size: 1rem;
+    position: fixed;
+    top: 90px;
+    left: 165px;
+    margin: 20px;
+    padding: 5px 10px;
+  }
+  
+  .breadcrumbsHero{
+    font-size: 1rem;
+    position: fixed;
+    top: 90px;
+    left: 180px;
+  }
+  
+  .btnVoltar{
+    position: fixed;
+    top: 90px;
+    left: 90px;
+    font-size: 1rem;
+    border: 2px solid secondary;
+    padding: 2px 4px;
+  }
+  
+  .containerHero{
+    width: 75vw;
+    height: 50vh;
+    border: 3px solid secondary;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+  }
+  
+  .nameHero{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .descriptionHero{
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .containerBtns{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .heroesBtns{
+    display: block;
+    font-size: 1rem;
+    border: 1px solid secondary;
+    padding: 2px 2px;
+    margin: 5px;
+  }
+  
+  .detailsList{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .detailsList li{
+    font-size: 1.5rem;
+  }
+  
+  /*
+    NOT FOUND PAGE Styles
+  */
+  
+  .erro{
+    font-size: 6rem;
+  }
+
+
 }
