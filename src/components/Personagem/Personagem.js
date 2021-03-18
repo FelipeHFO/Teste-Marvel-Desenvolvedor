@@ -94,7 +94,7 @@ function Personagem({id, name, description}) {
   return (
     <div className={StylesPages.containerHero}>
       <div>
-        <h1 className={StylesPages.nameHero}>{name}</h1>
+        <h1 className={StylesPages.nameHero} data-testid='nome-personagem'>{name}</h1>
         <h3 className={StylesPages.descriptionHero}>{description}</h3>
       </div>
       <nav className={StylesPages.containerBtns}>
