@@ -1,0 +1,139 @@
+<Meta title="Decisões Arquiteturais/2 - Definindo as rotas" />
+
+<style>
+  {
+    ` 
+    .container-links {
+      display: flex;
+      width: 100%;
+      height: 5%;
+      text-align: center;
+      justify-content: space-around;
+      margin-top: 25px;
+    }
+
+    .links {
+      height: 35px;
+      border: 2px solid rgb(57, 166, 255);
+      padding: 15px;
+    }
+
+    `
+  }
+</style>
+
+# Definindo as Rotas
+
+<br />
+<br />
+
+<div>
+  <ul>
+    <li>
+      <span>
+        Como estou fazendo uma Single-Page-Application, preciso usar as rotas do próprio React pra navegar entre as
+        páginas.
+      </span>
+    </li>
+    <li>
+      <span>
+        Pra isso decidi usar a biblioteca <strong>React Router DOM</strong> para definir as rotas no projeto.
+      </span>
+    </li>
+    <li>
+      <span>
+        Entretanto ela não me possibilita ter um código mais reutilizável.
+      </span>
+    </li>
+    <li>
+      <span>
+        Pra isso decidi utilizar o recurso de <strong>Rotas Nomeadas</strong>, para definir um nome para as rotas e em
+        todos os lugares do projeto apontar os links e redirecionamentos para esse nome, que por sua vez conhece o
+        caminho que é pra ser redirecionado.
+      </span>
+    </li>
+    <li>
+      <span>
+        Para utilizar esse recurso, precisei incluir também a biblioteca <strong>React Router Named Routes</strong>.
+      </span>
+    </li>
+  </ul>
+</div>
+
+<br />
+
+### Ferramentas usadas para fazer o roteamento
+
+<div className="container-links">
+  <a className="links" href="https://reactrouter.com/" target="_blank">
+    <span>
+      <strong>React Router DOM</strong><br />
+      Um conjunto de componentes que auxilia fazer a navegação entre seus componentes
+    </span>
+  </a>
+  <a className="links" href="https://github.com/adamziel/react-router-named-routes" target="_blank">
+    <span>
+      <strong>React Router Named Routes</strong><br />
+      Provê suporte à rotas nomeadas no React
+    </span>
+  </a>
+</div>
+
+<br />
+
+### Montando a estrutura de rotas:
+
+<div>
+  <span>
+    O React Router é composto por uma <strong>série de componentes</strong>. Estes podemos
+    usar da forma que nos for interessante no momento. Neste projeto escolhi fazer uso dos seguintes
+    componentes:
+  </span>
+  <ul>      
+    <li>
+      <span><strong>Browser Router:</strong> Pra gerenciar a navegação entre as páginas num
+        navegador web. Ele também permite acesso ao histórico de navegação e à manipulação da barra de endereços.</span>
+    </li>
+    <li>
+      <span><strong>Route:</strong> Permite escolher qual componente renderizar de acordo com um
+        caminho recebido.</span>
+    </li>
+    <li>
+      <span><strong>Switch:</strong> É quem vai de rota em rota e verifica se o caminho dela
+        corresponde ao que está na URL. Funciona como um Switch-case de rotas.</span>
+    </li>
+    <li>
+      <span><strong>Link:</strong> Permite navegar para uma rota ao clicar nele.</span>
+    </li>
+  </ul>
+</div>
+
+### Definindo nomes:
+
+<br />
+
+<span>
+  Definir um caminho estático nas rotas e links, faz com que sempre que precisarmos <strong>alterar</strong> este
+  caminho, tenhamos que ir de <strong>arquivo em arquivo</strong> que redireciona pra essa rota, e lembrar de alterar o
+  caminho da rota.
+</span>
+
+<br />
+<br />
+
+<span>
+  Uma forma simples de resolver isso é definir um <strong>nome</strong> para aquela rota, e apontar pro nome, visto que
+  ele <i>nunca</i> muda.
+</span>
+
+<br />
+
+### Rotas diferentes no front-end e no back-end:
+
+<span>
+  Uma vez que o Front-End é exposto para o usuário final, decidimos ter sempre rotas na linguagem do usuário e
+  entendíveis.
+</span>
+<span>
+  Porém no Back-End mantivemos a estrutura solicitada.
+</span>
