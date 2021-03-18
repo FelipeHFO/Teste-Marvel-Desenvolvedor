@@ -1,0 +1,45 @@
+import Character from '../assets/character.svg'
+import Characters from '../assets/characters.svg'
+import ComicsEventsSeriesStories from '../assets/comics_events_series_stories.svg'
+
+<Meta title="Decisões Arquiteturais/5 - Reultados da API" />
+
+# Resultados da API
+
+<br />
+
+<h2>
+  Os Endpoints definidos definidos para o projeto e seus respectivos retornos:
+</h2>
+
+<br />
+
+<ul>
+  <li>
+    <h3>/v1/public/characters</h3>
+    <img src={Characters} alt="Characters" width="300" />
+  </li>
+  <li>
+    <h3>/v1/public/characters/:characterId</h3>
+    <img src={Character} alt="Characters" width="300" />
+  </li>
+
+  <br />
+  <h3>Para todos os links abaixo, a API retorna a mesma estrutura de Objeto</h3>
+  <br />
+
+  <li>
+    <h3>/v1/public/characters/:characterId/comics</h3>
+  </li>
+  <li>
+    <h3>/v1/public/characters/:characterId/events</h3>
+  </li>
+  <li>
+    <h3>/v1/public/characters/:characterId/series</h3>
+  </li>
+  <li>
+    <h3>/v1/public/characters/:characterId/stories</h3>
+  </li>
+
+  <img src={ComicsEventsSeriesStories} alt="Objetos" width="300" />
+</ul>

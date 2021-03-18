@@ -1,0 +1,58 @@
+import ServicesAPI from '../assets/services-api.svg';
+
+<Meta title="Decisões Arquiteturais/ 3 - Utilizando Axios" />
+
+# Axios
+
+<br />
+
+### Introdução
+
+<p>
+  Axios é um cliente HTTP baseado em Promises para fazer requisições.
+  Ele pode ser utilizado tanto no Front-End quanto no Back-End usando NodeJS.
+</p>
+
+<br />
+
+### Algumas Características
+
+<ul>
+  <li>
+    <p>Por baixo dos panos faz requisições Ajax no browser via XMLHttpRequests.</p>
+  </li>
+  <li>
+    <p>Faz requisições HTTP no NodeJS</p>
+  </li>
+  <li>
+    <p>Intercepta requisições e respostas (<i>request & response</i>)</p>
+  </li>
+  <li>
+    <p>Transforma os dados em JSON automaticamente.</p>
+  </li>
+</ul>
+
+<br />
+
+### Criando uma configuração reutilizável
+
+<p>
+  Com Axios podemos fazer algumas configurações básicas, criar uma <strong> baseURL</strong> para não precisarmos
+  digitar em cada requisição o endereço do servidor, informando apenas a rota e seus parâmetros.
+
+  Geralmente criamos uma pasta <strong>services</strong> e um arquivo <strong> api.js.</strong>
+
+  Colocamos a configuração abaixo:
+</p>
+
+<h3><i>src/services/api.js</i></h3>
+
+<img src={ServicesAPI} alt="configuração do Axios" />
+
+<p>
+  Podemos fazer todos os tipos de requisições <strong>HTTP</strong>.
+
+  Agora ao invés de importar o <strong>axios</strong> em cada arquivo podemos apenas importar o arquivo
+  <strong>api.js</strong> e utilizamos a sintaxe: <strong>api.get("minhaRota")</strong>,
+  <strong> api.delete("outraRota")</strong>.
+</p>

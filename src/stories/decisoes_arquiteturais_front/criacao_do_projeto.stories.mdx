@@ -1,0 +1,145 @@
+<Meta title="Decisões Arquiteturais/1 - Criação do Projeto" />
+
+<style>
+  {
+    ` .flex {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      margin: 20px auto;
+    }
+
+    .container-links {
+      display: flex;
+      width: 100%;
+      height: 5%;
+      text-align: center;
+      justify-content: space-around;
+      margin-top: 25px;
+    }
+
+    .links {
+      height: 35px;
+      border: 2px solid rgb(57, 166, 255);
+      padding: 15px;
+    }
+
+
+
+    `
+  }
+</style>
+
+<h1>Decisões Arquiteturais</h1>
+
+<br />
+<br />
+
+<span>
+  Escolhi usar o React como ferramenta pra desenvolvimento do Front-End.
+</span>
+
+<br />
+<br />
+
+<span>
+  A escolha foi feita pois é a biblioteca de desenvolvimento front-end que mais
+  tenho conhecimento, sendo mantida pelo Facebook e ter uma ampla quantidade
+  de pessoas usando e bastante conteúdo disponível.
+</span>
+
+<br />
+<br />
+<br />
+
+### Ferramentas usadas pra começar o projeto.
+
+<div className="container-links">
+  <a className="links" href="https://pt-br.reactjs.org/" target="_blank">
+    <span>
+      <strong>React</strong><br />
+      Uma biblioteca JavaScript para criar interfaces de usuário
+    </span>
+  </a>
+
+  <a className="links" href="https://create-react-app.dev/" target="_blank">
+    <span>
+      <strong>Create React App</strong><br />
+      Criando uma aplicação moderna com apenas com comando
+    </span>
+  </a>
+</div>
+
+<br />
+
+### Considerações sobre o uso do Create React App:
+
+<div>
+
+  <ul>
+    <li>
+      <span>Quando escolhemos usar o Create React App, estamos escolhendo a decisão arquitetural de utilizar as
+        <strong><i>configurações</i></strong> que já vêm junto com ele por causa do <strong>React
+          Scripts</strong>.</span>
+    </li>
+    <li>
+      <span>É considerada uma decisão arquitetural, pois uma vez que usamos o React Scripts, não precisamos configurar o
+        Webpack, nem o Babel. <strong>Porém isso também dificulta que façamos configurações customizadas no Webpack ou
+          no Babel.</strong></span>
+    </li>
+  </ul>
+</div>
+
+<br />
+
+### Gerando a versão de produção do projeto:
+
+<br />
+
+<span>
+  Quando decidimos rodar um projeto React em ambiente de produção, precisamos executar uma série de tarefas para
+  otimizar o projeto para rodar bem nos navegadores dos usuários consumindo o mínimo possível da sua internet e do nosso
+  servidor.
+</span>
+
+<br />
+<br />
+
+### Algumas dessas tarefas incluem:
+
+<div>
+  <ul>
+    <li>
+      <span>Minimizar os arquivos javascript e css.</span>
+    </li>
+    <li>
+      <span>Transpila seu código ES6 ou posterior para ES2015.</span>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <span>
+    Por ter escolhido usar o Create React App, já temos tudo isso configurado no comando <strong>build</strong> que
+    o React Scripts nos disponibiliza.
+  </span>
+
+  <br />
+  <br />
+
+  <div className="flex">
+    <code>npm run build</code>
+    <code>yarn build</code>
+  </div>
+</div>
+
+<br />
+
+<div>
+  <span>
+    Depois disso já podemos fazer o Deploy da aplicação!
+  </span>
+  <div>
+
+  </div>
+</div>
