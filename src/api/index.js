@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
-const base_url_api_v1 = '/v1/public'
+const base_url_api_v1 = '/v1/public';
 
 const data = require('./data/data.json');
 
