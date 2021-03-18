@@ -1,6 +1,6 @@
 import React from 'react';
 import DefaultLayout from '../layouts/DefaultLayout';
-import StylesPages from './StylesPages.module.css'
+import StylesPages from './StylesPages.module.css';
 
 function NotFoundPage() {
   return (

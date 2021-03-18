@@ -50,9 +50,9 @@ function Personagem({id, name, description}) {
       return null;
     
     if(comics.errors && comics.errors.msg)
-      return <h1>{comics.errors.msg}</h1>
+      return <h1>{comics.errors.msg}</h1>;
 
-    return comics.items.map(item => <li key={id+item.name}>{item.name}</li>)
+    return comics.items.map(item => <li key={id+item.name}>{item.name}</li>);
   }
 
   const RenderEvents = () => {
@@ -62,9 +62,9 @@ function Personagem({id, name, description}) {
       return null;
 
     if(events.errors &&events.errors.msg)
-      return <h1>{events.errors.msg}</h1>
+      return <h1>{events.errors.msg}</h1>;
 
-    return events.items.map(item => <li key={id+item.name}>{item.name}</li>)
+    return events.items.map(item => <li key={id+item.name}>{item.name}</li>);
   }
 
   const RenderSeries = () => {
@@ -74,9 +74,9 @@ function Personagem({id, name, description}) {
       return null;
     
     if(series.errors && series.errors.msg)
-      return <h1>{series.errors.msg}</h1>
+      return <h1>{series.errors.msg}</h1>;
 
-    return series.items.map(item => <li key={id+item.name}>{item.name}</li>)
+    return series.items.map(item => <li key={id+item.name}>{item.name}</li>);
   }
 
   const RenderStories = () => {
@@ -86,9 +86,9 @@ function Personagem({id, name, description}) {
       return null;
 
     if(stories.errors && stories.errors.msg)
-      return <h1>{stories.errors.msg}</h1>
+      return <h1>{stories.errors.msg}</h1>;
 
-    return stories.items.map(item => <li key={id+item.name}>{item.name}</li>)
+    return stories.items.map(item => <li key={id+item.name}>{item.name}</li>);
   }
 
   return (
