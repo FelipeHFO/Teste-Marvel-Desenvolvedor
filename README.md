@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Projeto Personagens da MARVEL
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto simula um Front-End para as respostas da API da MARVEL.
 
-## Available Scripts
+## Intruções
 
-In the project directory, you can run:
+[x] - No terminal do seu Visual Studio Code ou com o Git Bash, execute o seguinte comando para clonar este repositório:
+> git clone git@github.com:FelipeHFO/Teste-Marvel-Desenvolvedor.git 
 
-### `npm start`
+## Após clonar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[x] - Entre na pasta do Projeto e execute o seguinte comando:
+> npm install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Isto irá instalar todas as dependências do projeto contidas no package.json
 
-### `npm test`
+#### Após instalar as Dependências
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Ainda na pasta do projeto, execute os comandos a seguir.
 
-### `npm run build`
+## Executando o Back-End
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[x] - Para executar a API em NodeJS execute o seguinte comando:
+> node src/api/index.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* A API será disponibilizada no seguinte caminho:
+> http://localhost:5000/v1/public/characters/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Executando o Front-End
 
-### `npm run eject`
+[x] - Para executar o Front-End execute o seguinte comando:
+> npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* A aplicação Front-End será disponibilizada no seguinte caminho:
+> http://localhost:3000
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Executando o Storybook (Documentação)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[x] - Para executar a Documentação execute o seguinte comando:
+>npm run storybook
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* A aplicação Storybook será disponibilizada no seguinte caminho:
+> http://localhost:6006
 
-## Learn More
+## Executando os Teste
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[x] - Para executar os Testes execute o seguinte comando:
+>npm run test
