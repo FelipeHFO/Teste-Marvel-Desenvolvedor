@@ -4,12 +4,12 @@ Este projeto simula um Front-End para as respostas da API da MARVEL.
 
 ## Intruções
 
-[x] - No terminal do seu Visual Studio Code ou com o Git Bash, execute o seguinte comando para clonar este repositório:
+- [x] No terminal do seu Visual Studio Code ou com o Git Bash, execute o seguinte comando para clonar este repositório:
 > git clone git@github.com:FelipeHFO/Teste-Marvel-Desenvolvedor.git 
 
 ## Após clonar
 
-[x] - Entre na pasta do Projeto e execute o seguinte comando:
+- [x] Entre na pasta do Projeto e execute o seguinte comando:
 > npm install
 
 * Isto irá instalar todas as dependências do projeto contidas no package.json
