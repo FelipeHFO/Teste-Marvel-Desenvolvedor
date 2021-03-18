@@ -20,7 +20,7 @@ Este projeto simula um Front-End para as respostas da API da MARVEL.
 
 ## Executando o Back-End
 
-[x] - Para executar a API em NodeJS execute o seguinte comando:
+- [x] Para executar a API em NodeJS execute o seguinte comando:
 > node src/api/index.js
 
 * A API será disponibilizada no seguinte caminho:
@@ -28,7 +28,7 @@ Este projeto simula um Front-End para as respostas da API da MARVEL.
 
 ## Executando o Front-End
 
-[x] - Para executar o Front-End execute o seguinte comando:
+- [x] Para executar o Front-End execute o seguinte comando:
 > npm start
 
 * A aplicação Front-End será disponibilizada no seguinte caminho:
@@ -36,7 +36,7 @@ Este projeto simula um Front-End para as respostas da API da MARVEL.
 
 ## Executando o Storybook (Documentação)
 
-[x] - Para executar a Documentação execute o seguinte comando:
+- [x] Para executar a Documentação execute o seguinte comando:
 >npm run storybook
 
 * A aplicação Storybook será disponibilizada no seguinte caminho:
@@ -44,5 +44,5 @@ Este projeto simula um Front-End para as respostas da API da MARVEL.
 
 ## Executando os Teste
 
-[x] - Para executar os Testes execute o seguinte comando:
+- [x] Para executar os Testes execute o seguinte comando:
 >npm run test
