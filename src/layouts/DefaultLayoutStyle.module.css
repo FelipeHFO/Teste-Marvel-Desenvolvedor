@@ -17,6 +17,11 @@
   background-position: center;
   justify-content: center;
   align-items: center;
+
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+
 }
 
 .footer{
@@ -28,6 +33,27 @@
   color: third;
   text-align: center;
   font-size: 1.7rem;
+}
+
+@keyframes slide{
+  from {
+    background-image: url('../assets/bg.jpg');
+  }
+  50%{
+    background-image: url('../assets/bg.jpg');
+  }
+  60%{
+
+  }
+  75% {
+    background-image: url('../assets/bg2.jpg');
+  }
+  90%{
+    background-image: url('../assets/bg2.jpg');
+  }
+  100%{
+
+  }
 }
 
 @media (max-width: 700px){
